@@ -1,3 +1,4 @@
+import { faTicketAlt } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import styled from "styled-components";
 
@@ -60,7 +61,8 @@ export const BettingTicketList = ({ children }) => {
   if (React.Children.count(children) === 0) {
     return (
       <Placeholder>
-        <i className="fas fa-ticket-alt" />
+        {/* <i className="fas fa-ticket-alt" /> */}
+        <faTicketAlt />
         <div>購入した拳券はありません</div>
       </Placeholder>
     );

@@ -1,3 +1,4 @@
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import moment from "moment-timezone";
 import React, { useCallback, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -93,7 +94,8 @@ export const Odds = () => {
         <Spacer mt={Space * 4} />
 
         <Callout $closed={isRaceClosed}>
-          <i className="fas fa-info-circle" />
+          {/* <i className="fas fa-info-circle" /> */}
+          <faInfoCircle />
           {isRaceClosed
             ? "このレースの投票は締め切られています"
             : "オッズをクリックすると拳券が購入できます"}

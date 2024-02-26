@@ -1,3 +1,4 @@
+import { faHandPeace } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 import styled from "styled-components";
 
@@ -22,7 +23,8 @@ const Wrapper = styled.div`
 export const RaceResultSection = () => {
   return (
     <Wrapper>
-      <i className="far fa-hand-peace" />
+      {/* <i className="far fa-hand-peace" /> */}
+      <faHandPeace />
       <div>結果はまだありません</div>
     </Wrapper>
   );
