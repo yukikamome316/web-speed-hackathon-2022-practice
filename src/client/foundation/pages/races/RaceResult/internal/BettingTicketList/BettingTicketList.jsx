@@ -1,4 +1,5 @@
 import { faTicketAlt } from "@fortawesome/free-solid-svg-icons/faTicketAlt";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 
@@ -62,7 +63,7 @@ export const BettingTicketList = ({ children }) => {
     return (
       <Placeholder>
         {/* <i className="fas fa-ticket-alt" /> */}
-        <faTicketAlt />
+        <FontAwesomeIcon icon={faTicketAlt} />
         <div>購入した拳券はありません</div>
       </Placeholder>
     );
